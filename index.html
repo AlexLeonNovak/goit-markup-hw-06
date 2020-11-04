@@ -66,7 +66,7 @@
             <h1 class="intro-title">
                 Эфективные решения для вашего бизнеса
             </h1>
-            <button class="intro-btn btn-blue" data-modal-open>Заказать услугу</button>
+            <button class="btn intro-btn" data-modal-open>Заказать услугу</button>
         </div>
     </div>
 </section>
@@ -494,17 +494,82 @@
                     </li>
                 </ul>
             </li>
+            <li class="footer-block-item">
+                <h2 class="footer-social-title">Подпишитесь на рассылку</h2>
+                <form class="subscribe-form flexbox">
+                    <input type="email"
+                           name="email"
+                           placeholder="E-mail"
+                           class="input"
+                    >
+                    <button type="submit" class="btn flexbox subscribe-btn">
+                        <span class="btn-label">Подписаться</span>
+                        <svg class="btn-icon">
+                            <use href="./images/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </li>
         </ul>
     </div>
 </footer>
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal-close" data-modal-close>
             <svg class="icon-close">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
+        <div class="modal-body">
+            <form class="offer-form">
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <label class="field">
+                    <span class="field-label">Имя</span>
+                    <div class="input-icon-block">
+                        <input type="text" name="name" class="field-input">
+                        <svg class="field-icon">
+                            <use href="./images/sprite.svg#person"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="field">
+                    <span class="field-label">Телефон</span>
+                    <div class="input-icon-block">
+                        <input type="tel" name="phone" class="field-input">
+                        <svg class="field-icon">
+                            <use href="./images/sprite.svg#phone"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="field">
+                    <span class="field-label">Почта</span>
+                    <div class="input-icon-block">
+                        <input type="email" name="email" class="field-input">
+                        <svg class="field-icon">
+                            <use href="./images/sprite.svg#email"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="field">
+                    <span class="field-label">Комментарий</span>
+                    <div class="input-icon-block">
+                        <textarea name="comment" class="field-input field-textarea"></textarea>
+                    </div>
+                </label>
+                <label class="field field-agree">
+                    <input type="checkbox" name="agree" class="field-checkbox">
+                    <span class="check_box"></span>
+                    <span class="field-label">
+                        Соглашаюсь с рассылкой и принимаю
+                        <a href="#" class="link link-agree">Условия договора</a>
+                    </span>
+                </label>
+                <div class="center">
+                    <button type="submit" class="btn btn-offer">Отправить</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
